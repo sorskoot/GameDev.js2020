@@ -1,5 +1,4 @@
 
-
 export default AFRAME.registerComponent('capture', {
     schema: {},
     init: function () {

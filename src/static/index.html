@@ -13,25 +13,31 @@
 </head>
 
 <body>
-    <a-scene>
-        <a-box id="replay">
+    <a-scene game>
+        <a-entity id="replay">
+            <a-entity collider-check="target:#replay-head"></a-entity>
             <a-box position="0 0 0" color="blue" scale=".5 .05 .5"></a-box>
             <a-box id="replay-lh" color="red" scale=".2 .2 .2" position="-1 0 -5"></a-box>
             <a-box id="replay-rh" color="red" scale=".2 .2 .2" position="-1 0 -5"></a-box>
             <a-box id="replay-head" color="red" scale=".2 .2 .2" position="-1 0 -5"></a-box>
-        </a-box>
-        <a-sphere color="red" position="1 0 -5"></a-sphere>
-        <a-plane color="#333333" rotation="-90 0 0" scale="15 15 15"></a-plane>
-        <a-entity id="cameraRig" capture>
-            <!-- camera -->
+        </a-entity>
+
+        <a-plane class="collidable" floor-trigger position="-5 .1 -10" rotation="-90 0 0" color="red"></a-plane>
+
+        <a-plane color="#333333" rotation="-90 0 0" scale="25 25 25"></a-plane>
+        
+        <a-entity id="cameraRig"  capture >
+            <a-entity collider-check="target:#head"></a-entity>
+
             <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"
-                teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; startEvents: teleportstart; endEvents: teleportend" input-listen>
-               
+                teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; startEvents: teleportstart; endEvents: teleportend" input-listen>              
             </a-entity>
             <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"
                 teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; startEvents: teleportstart; endEvents: teleportend" input-listen>
             </a-entity>
-            <a-entity id="head" camera wasd-controls look-controls></a-entity>
+            
+            <a-entity id="head" position="0 1.8 0" camera wasd-controls  look-controls>                                
+            </a-entity>
         </a-entity>
     </a-scene>
 </body>

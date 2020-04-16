@@ -26,10 +26,15 @@ Ideas:
         ~ jump into the future to;
             stand on a button to open a door
             hold a button to move a platform
+        ~ Maybe create a certain mood by don't use black but a dark red for example 
 
 Todo:
-    core:
-        ☐ detect if player or time-traveler is standing 'on' a button
+    core mechanics:
+        ✔ detect if player or time-traveler is standing 'on' a button @done(20-04-16 23:44)
+        ☐ @today Use a button to start the jump to the future
+        ☐ @today Jump back to the past after the time is out
+        ✔ send an event when we end the collision with an object @done(20-04-16 23:44)
+
         
         
 

@@ -23,5 +23,13 @@ Ideas:
         ~ Time grenades, but can only be used in the future to move something to the past.
         ~ https://github.com/dmarcos/aframe-motion-capture-components
         ~ Maybe we should not go the roguelike path, but for now create a couple of levels by hand. For the compo most people will play the games for about 5mins anyway.
+        ~ jump into the future to;
+            stand on a button to open a door
+            hold a button to move a platform
 
+Todo:
+    core:
+        ☐ detect if player or time-traveler is standing 'on' a button
+        
+        
 

@@ -1,0 +1,27 @@
+Must!: 
+    - VR --> A-Frame / Babylon+Unity3D
+    - 
+
+Ideas:
+    - Name: Futurus II
+    - Move object in "time" take them back or forward in time, ie "Change The Future"
+    - Travel through space, time difference on earth
+    - unicorns with lazers.. That's the future!
+    - Bullet time - 
+    - Sand Timer - Times flow in direction of the sand
+    - Time grenades
+    - Crystal Ball 
+    - Something with GIT, the train tracks view... each feature branch shows the future until merged to master
+
+    - Crystal ball to predict path of a purple hamster riding a unicorn shooting lazers through maze
+
+    - "Roguelike" - travel to future to change something you will encounter when playing the game. 
+        ~ Only travel to future for a small amount of time to get something done. For example stand on a button, start shooting an enemy that is too though to handle alone or do something with lazers. 
+        ~ travel to the future; 1) for x amount of seconds then return 2) skip y amount of second into the future. 
+        ~ find upgrades to stay in the future longer
+        ~ Use portals as well.
+        ~ Time grenades, but can only be used in the future to move something to the past.
+        ~ https://github.com/dmarcos/aframe-motion-capture-components
+        ~ Maybe we should not go the roguelike path, but for now create a couple of levels by hand. For the compo most people will play the games for about 5mins anyway.
+
+

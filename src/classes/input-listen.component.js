@@ -66,16 +66,18 @@ export default AFRAME.registerComponent('input-listen', {
             //     //Clear information of selectedObj
             //     this.selectedObj = null;
             // });
-
+            document.addEventListener('keydown', function (e) {
+                if (e.keyCode === 32) {
+                    const capture = document.querySelector('[capture]');
+                    capture.components['capture'].startRecording();
+                }
+            });
             // //A-buttorn Pressed 
-            // this.el.addEventListener('abuttondown', function (e) {
-            //     //Aqurire all ball entities which are instantiated in a-scene
-            //     var els = document.querySelectorAll('.ball');
-            //     //Destroy all ball entities
-            //     for (var i = 0; i < els.length; i++) {
-            //         els[i].parentNode.removeChild(els[i]);
-            //     }
-            // });
+            this.el.addEventListener('abuttondown', function (e) {
+                const capture = document.querySelector('[capture]');
+                capture.components['capture'].startRecording();
+
+            });
 
             //X-buttorn Pressed 
             this.el.addEventListener('xbuttondown', function (e) {

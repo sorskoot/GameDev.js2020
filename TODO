@@ -36,7 +36,20 @@ Todo:
         ✔ send an event when we end the collision with an object @done(20-04-16 23:44)
         ☐ Make special version for desktop
         ☐ Visual indicator of the capturing / "Time Traver" state.
+    graphics:  
+        ☐ "watch" link indicator on our hand/arm
+        Textures:
+            ☐ walls
+            ☐ floor
+            ☐ door
+            ☐ acid
+            ☐ metal bridge
+            ☐ floor trigger
+            ☐ button 
 
+
+
+        
         
         
 

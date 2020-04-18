@@ -13,7 +13,10 @@
 </head>
 
 <body>
-    <a-scene game>
+    <a-scene game  background="color:#44aaee">
+        <a-assets>
+            <img src="/maps/textures.png" id="textures"/>
+        </a-assets>
         <a-entity id="replay">
             <a-entity collider-check="target:#replay-head"></a-entity>
             <a-box position="0 0 0" color="blue" scale=".5 .05 .5"></a-box>
@@ -21,6 +24,18 @@
             <a-box id="replay-rh" color="red" scale=".2 .2 .2" position="-1 0 -5"></a-box>
             <a-box id="replay-head" color="red" scale=".2 .2 .2" position="-1 0 -5"></a-box>
         </a-entity>
+
+        <a-plane pixel-shader="index:0 7;diffuseTexture:#textures;dimension:8 8" position="-2 0.5 -5"></a-plane>
+        <a-plane pixel-shader="index:1 7;diffuseTexture:#textures;dimension:8 8" position="-2 1.5 -5"></a-plane>
+        <a-plane pixel-shader="index:0 6;diffuseTexture:#textures;dimension:8 8" position="-2 2.5 -5"></a-plane>
+
+        <a-plane pixel-shader="index:0 7;diffuseTexture:#textures;dimension:8 8" position="-1 0.5 -5"></a-plane>
+        <a-plane pixel-shader="index:0 7;diffuseTexture:#textures;dimension:8 8" position="-1 1.5 -5"></a-plane>
+        <a-plane pixel-shader="index:0 7;diffuseTexture:#textures;dimension:8 8" position="-1 2.5 -5"></a-plane>
+
+        <a-plane pixel-shader="index:0 7;diffuseTexture:#textures;dimension:8 8" position="0 0.5 -5"></a-plane>
+        <a-plane pixel-shader="index:1 6;diffuseTexture:#textures;dimension:8 8" position="0 1.5 -5"></a-plane>
+        <a-plane pixel-shader="index:0 7;diffuseTexture:#textures;dimension:8 8" position="0 2.5 -5"></a-plane>
 
         <a-plane class="collidable" floor-trigger position="-5 .1 -10" rotation="-90 0 0" color="red"></a-plane>
 

@@ -18,14 +18,14 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
             },
-            // {
-            //     test: /\.(glsl|vs|fs|vert|frag)$/,
-            //     exclude: /node_modules/,
-            //     use: [
-            //         'raw-loader',
-            //         'glslify-loader'
-            //     ]
-            // },
+            {
+                test: /\.(glsl|vs|fs|vert|frag)$/,
+                exclude: /node_modules/,
+                use: [
+                    'raw-loader',
+                    'glslify-loader'
+                ]
+            },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
